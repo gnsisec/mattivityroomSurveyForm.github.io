@@ -1,0 +1,90 @@
+body {
+  background-color: #006400;
+  color: white;
+  min-width: 550px;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+#title {
+  text-align: center;
+  font-size: 33px;
+}
+
+#survey-form {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 0.5em;
+  padding: 1.5em 4em;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+#description {
+  text-align: center;
+  font-weight: 800;
+  font-size: 16px;
+  margin-top: 0px;
+}
+
+.survey-form--row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid #ebf9eb;
+	padding: 15px 6px;
+  flex-wrap: wrap;
+}
+
+.survey-form__label {
+  // border: 2px solid yellow;
+  flex-grow: 1;
+  flex-basis: 25%;
+  margin-right: 10px;
+}
+
+.survey-form__input-field {
+  // border: 2px solid blue;
+  flex-grow: 1;
+  flex-basis: 35%;
+  min-width: 50%;
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid #006400;
+  padding: .4em;
+}
+
+.recommend-item-wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+.improvement-item-wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+#submit {
+  margin-top: 1em;
+  align-self: center;
+  width: 100px;
+  height: 40px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.comment-box{
+  margin: 0px 0px;
+  display: block;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

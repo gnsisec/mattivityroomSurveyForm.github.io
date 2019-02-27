@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <header class="header">
+      <h1 id="title">Survey Form</h1>
+    </header>
+
+    <form id="survey-form">
+      <p id="description">Let us know how we can improve FreeCodeCamp</p>
+      <div class="survey-form--row">
+          <label id="name-label" class="survey-form__label" for="name">* Name: </label>
+          <input tabindex="1" required id="name" type="text" name="name" class="survey-form__input-field" placeholder="Enter your name">
+      </div>
+      <div class="survey-form--row">
+          <label id="email-label" class="survey-form__label" for="name">* Email: </label>
+          <input tabindex="2" required id="email" type="email" name="email" class="survey-form__input-field" placeholder="Enter your email">
+      </div>
+      <div class="survey-form--row">
+          <label id="number-label" class="survey-form__label" for="name">Age: </label>
+          <input tabindex="3" id="number" type="number" name="number" class="survey-form__input-field" min="1" max="200" placeholder="Enter your age">
+      </div>
+      <div class="survey-form--row">
+          <label id="role-label" class="survey-form__label" for="role">Which option best describes your current role?</label>
+          <select id="dropdown" class="survey-form__input-field" name="role">
+            <option value="" selected disabled>Select an option</option>
+            <option value="student" default>Student</option>
+            <option value="fulltime">Full Time Job</option>
+            <option value="freelancer">Freelancer</option>
+            <option value="looking">Looking for oppurtunities</option>
+          </select>
+      </div>
+      <div class="survey-form--row recommended">
+          <label id="recommend-label" class="survey-form__label" for="recommend">How likely is that you would recommend freeCodeCamp to a friend?</label>
+          <ul class="recommend-item-wrapper survey-form__input-field" style="list-style: none" >
+            <li>
+              <label><input name="radio-buttons" value="1"  type="radio" class="userRatings">Definitely</label>
+            </li>
+            <li>
+              <label><input name="radio-buttons" value="2" type="radio" class="userRatings">Maybe</label>
+            </li>
+            <li>
+              <label><input name="radio-buttons" value="3" type="radio" class="userRatings">Not Sure</label>
+            </li>
+          </ul>
+      </div>
+      <div class="survey-form--row">
+        <label id="like-label" class="survey-form__label" for="like">What do you like most in FCC:</label>
+        <select class="like-option survey-form__input-field" name="like-option">
+          <option value="" selected disabled>Select an option</option>
+          <option value="project">Project</option>
+          <option value="challange">Challange</option>
+          <option value="community">Community</option>
+        </select>
+      </div>
+      <div class="survey-form--row">
+        <label id="improvement-label" class="survey-form__label" for="improvement">Things that should be improved in the future (Check all that apply):</label>
+        <ul class="improvement-item-wrapper survey-form__input-field"  style="list-style: none" >
+          <li>
+            <label><input name="improvement-checkbox" value="1" type="checkbox" class="improvement-checkbox">Front-end Project</label>
+          </li>
+          <li>
+            <label><input name="improvement-checkbox" value="2" type="checkbox" class="improvement-checkbox">Back-end Project</label>
+          </li>
+          <li>
+            <label><input name="improvement-checkbox" value="3" type="checkbox" class="improvement-checkbox">Data Visualization</label>
+          </li>
+          <li>
+            <label><input name="improvement-checkbox" value="4" type="checkbox" class="improvement-checkbox">Git</label>
+          </li>
+          <li>
+            <label><input name="improvement-checkbox" value="5" type="checkbox" class="improvement-checkbox">Javascript</label>
+          </li>
+        </ul>
+      </div>
+      <div class="survey-form--row">
+        <label id="comment-label" class="survey-form__label" for="comment">Any Comments or Suggestions?</label>
+        <textarea class="survey-form__input-field comment-box" name="comment-box" rows="5" cols="25" placeholder="Enter comment here..."></textarea>
+      </div>
+      <button id="submit" type="submit" name="submit-button">Submit</button>
+    </form>
+
+  </body>
+</html>
+
+          <!-- <label for=""> <span class="required-icon">*</span> Name :</label> -->
